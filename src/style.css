@@ -718,6 +718,14 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    letter-spacing: 0.075em;
+  }
 }
 
 /* iPhone 4 ----------- */
