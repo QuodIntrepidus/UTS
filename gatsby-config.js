@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Under The Stars`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `-`,
+      summary: `A group of authors, artists and coders that came together to work on a project they were always meant to write.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Newsfeed and Information about UTS.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `UTS`,
     },
   },
   plugins: [
