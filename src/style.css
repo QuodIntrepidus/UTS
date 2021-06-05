@@ -256,6 +256,199 @@ a:focus {
 }
 
 /* Custom classes */
+#toggle {
+  position: absolute;
+  top: 3%;
+  right: 4%;
+  visibility: hidden;
+}
+.mute-con {
+  position: fixed;
+  top: 3%;
+  right: 4%;
+  height: 50px;
+  width: 60px;
+}
+
+.mute-line {
+  position: inherit;
+  background: white;
+  height: 2px;
+  width: 2px;
+  margin-top: 25px;
+  transition: padding 0.4s, margin 0.4s;
+}
+
+.mute-line:nth-child(1) {
+  margin-left: 2px;
+}
+.mute-con:hover > .mute-line:nth-child(1) {
+  margin-top: 23px;
+  padding-bottom: 2px;
+}
+#toggle:checked ~ label > .mute-con > .mute-line:nth-child(1) {
+  margin-top: 23px;
+  padding-bottom: 2px;
+}
+.mute-line:nth-child(2) {
+  margin-left: 6px;
+}
+.mute-con:hover > .mute-line:nth-child(2) {
+  margin-top: 20px;
+  padding-bottom: 8px;
+}
+#toggle:checked ~ label > .mute-con > .mute-line:nth-child(2) {
+  margin-top: 20px;
+  padding-bottom: 8px;
+}
+
+.mute-line:nth-child(3) {
+  margin-left: 10px;
+}
+.mute-con:hover > .mute-line:nth-child(3) {
+  margin-top: 18px;
+  padding-bottom: 12px;
+}
+#toggle:checked ~ label > .mute-con > .mute-line:nth-child(3) {
+  margin-top: 18px;
+  padding-bottom: 12px;
+}
+
+.mute-line:nth-child(4) {
+  margin-left: 14px;
+}
+.mute-con:hover > .mute-line:nth-child(4) {
+  margin-top: 20px;
+  padding-bottom: 8px;
+}
+#toggle:checked ~ label > .mute-con > .mute-line:nth-child(4) {
+  margin-top: 20px;
+  padding-bottom: 8px;
+}
+
+.mute-line:nth-child(5) {
+  margin-left: 18px;
+}
+.mute-con:hover > .mute-line:nth-child(5) {
+  margin-top: 21px;
+  padding-bottom: 6px;
+}
+#toggle:checked ~ label > .mute-con > .mute-line:nth-child(5) {
+  margin-top: 21px;
+  padding-bottom: 6px;
+}
+
+.mute-line:nth-child(6) {
+  margin-left: 22px;
+}
+.mute-con:hover > .mute-line:nth-child(6) {
+  margin-top: 23px;
+  padding-bottom: 2px;
+}
+#toggle:checked ~ label > .mute-con > .mute-line:nth-child(6) {
+  margin-top: 23px;
+  padding-bottom: 2px;
+}
+
+.mute-line:nth-child(7) {
+  margin-left: 26px;
+}
+.mute-con:hover > .mute-line:nth-child(7) {
+  margin-top: 23px;
+  padding-bottom: 1px;
+}
+#toggle:checked ~ label > .mute-con > .mute-line:nth-child(7) {
+  margin-top: 23px;
+  padding-bottom: 1px;
+}
+.mute-line:nth-child(8) {
+  margin-left: 30px;
+}
+.mute-con:hover > .mute-line:nth-child(8) {
+  margin-top: 23px;
+  padding-bottom: 2px;
+}
+#toggle:checked ~ label > .mute-con > .mute-line:nth-child(8) {
+  margin-top: 23px;
+  padding-bottom: 2px;
+}
+.mute-line:nth-child(9) {
+  margin-left: 34px;
+}
+.mute-con:hover > .mute-line:nth-child(9) {
+  margin-top: 20px;
+  padding-bottom: 8px;
+}
+#toggle:checked ~ label > .mute-con > .mute-line:nth-child(9) {
+  margin-top: 20px;
+  padding-bottom: 8px;
+}
+.mute-line:nth-child(10) {
+  margin-left: 38px;
+}
+.mute-con:hover > .mute-line:nth-child(10) {
+  margin-top: 18px;
+  padding-bottom: 12px;
+}
+#toggle:checked ~ label > .mute-con > .mute-line:nth-child(10) {
+  margin-top: 18px;
+  padding-bottom: 12px;
+}
+.mute-line:nth-child(11) {
+  margin-left: 42px;
+}
+.mute-con:hover > .mute-line:nth-child(11) {
+  margin-top: 17px;
+  padding-bottom: 14px;
+}
+#toggle:checked ~ label > .mute-con > .mute-line:nth-child(11) {
+  margin-top: 17px;
+  padding-bottom: 14px;
+}
+.mute-line:nth-child(12) {
+  margin-left: 46px;
+}
+.mute-con:hover > .mute-line:nth-child(12) {
+  margin-top: 19px;
+  padding-bottom: 10px;
+}
+#toggle:checked ~ label > .mute-con > .mute-line:nth-child(12) {
+  margin-top: 19px;
+  padding-bottom: 10px;
+}
+.mute-line:nth-child(13) {
+  margin-left: 50px;
+}
+.mute-con:hover > .mute-line:nth-child(13) {
+  margin-top: 21px;
+  padding-bottom: 6px;
+}
+#toggle:checked ~ label > .mute-con > .mute-line:nth-child(13) {
+  margin-top: 21px;
+  padding-bottom: 6px;
+}
+.mute-line:nth-child(14) {
+  margin-left: 54px;
+}
+.mute-con:hover > .mute-line:nth-child(14) {
+  margin-top: 22px;
+  padding-bottom: 4px;
+}
+#toggle:checked ~ label > .mute-con > .mute-line:nth-child(14) {
+  margin-top: 22px;
+  padding-bottom: 4px;
+}
+.mute-line:nth-child(15) {
+  margin-left: 58px;
+}
+.mute-con:hover > .mute-line:nth-child(15) {
+  margin-top: 23px;
+  padding-bottom: 2px;
+}
+#toggle:checked ~ label > .mute-con > .mute-line:nth-child(15) {
+  margin-top: 23px;
+  padding-bottom: 2px;
+}
 .night {
   position: relative;
   width: 100%;
@@ -610,6 +803,11 @@ a:focus {
   100% {
     transform: rotate(405deg);
   }
+}
+.mute {
+  position: fixed;
+  top: 2%;
+  right: 2%;
 }
 .bg-parallax {
   height: 100vh;
