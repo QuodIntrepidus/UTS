@@ -32,7 +32,7 @@ const Layout = ({ location, title, children }) => {
           url={UTSaudio}
           playStatus={isPlaying ? Sound.status.PLAYING : Sound.status.STOPPED}
           loop = {true}
-          volume={40}
+          volume={20}
         />
       <label for="toggle">
         <div class="mute-con">
