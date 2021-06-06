@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { useState } from 'react';
 import Sound from 'react-sound';
 import UTSaudio from "../audio/bg_sound.mp3";
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -13,14 +14,14 @@ const Layout = ({ location, title, children }) => {
   if (isRootPath) {
     header = (
       <h1 className="main-heading">
-        <Link to="/">{title}</Link>
+        <AniLink cover to="/" bg="#000" direction="right">{title}</AniLink>
       </h1>
     )
   } else {
     header = (
-      <Link className="header-link-home" to="/">
+      <AniLink cover className="header-link-home" to="/" bg="#000" direction="right">
         {title}
-      </Link>
+      </AniLink>
     )
   }
 
@@ -32,7 +33,7 @@ const Layout = ({ location, title, children }) => {
           url={UTSaudio}
           playStatus={isPlaying ? Sound.status.PLAYING : Sound.status.STOPPED}
           loop = {true}
-          volume={20}
+          volume={10}
         />
       <label for="toggle">
         <div class="mute-con">

@@ -804,10 +804,18 @@ a:focus {
     transform: rotate(405deg);
   }
 }
-.mute {
+.nav-con {
   position: fixed;
-  top: 2%;
-  right: 2%;
+  top: 10%;
+  right: 4%;
+  height: 100%;
+  width: 60px;
+}
+.nav-link {
+  font-size: var(--fontSize-4);
+  text-decoration: none;
+  color: var(--color-heading);
+  font-family: var(--font-heading);
 }
 .bg-parallax {
   height: 100vh;
@@ -935,6 +943,9 @@ a:focus {
   .bio p {
     font-size: var(--fontSize-2);
   }
+  .nav-link {
+    font-size: var(--fontSize-3);
+  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
@@ -945,6 +956,9 @@ a:focus {
   }
   .bio p {
     font-size: var(--fontSize-2);
+  }
+  .nav-link {
+    font-size: var(--fontSize-3);
   }
 }
 
@@ -958,6 +972,9 @@ a:focus {
   .bio p {
     font-size: var(--fontSize-2);
   }
+  .nav-link {
+    font-size: var(--fontSize-3);
+  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
@@ -968,6 +985,9 @@ a:focus {
   }
   .bio p {
     font-size: var(--fontSize-2);
+  }
+  .nav-link {
+    font-size: var(--fontSize-3);
   }
 }
 
@@ -981,6 +1001,9 @@ a:focus {
   .bio p {
     font-size: var(--fontSize-3);
   }
+  .nav-link {
+    font-size: var(--fontSize-3);
+  }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
@@ -990,6 +1013,9 @@ a:focus {
     margin-bottom: 100%;
   }
   .bio p {
+    font-size: var(--fontSize-3);
+  }
+  .nav-link {
     font-size: var(--fontSize-3);
   }
 }
@@ -1004,6 +1030,9 @@ a:focus {
   .bio p {
     font-size: var(--fontSize-3);
   }
+  .nav-link {
+    font-size: var(--fontSize-3);
+  }
 }
 
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
@@ -1013,6 +1042,9 @@ a:focus {
     margin-bottom: 100%;
   }
   .bio p {
+    font-size: var(--fontSize-3);
+  }
+  .nav-link {
     font-size: var(--fontSize-3);
   }
 }

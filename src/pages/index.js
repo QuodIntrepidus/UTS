@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 
 const BlogIndex = ({ data, location }) => {
@@ -11,6 +12,11 @@ const BlogIndex = ({ data, location }) => {
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
+        <div className="nav-con">
+    <AniLink cover to="/about" bg="#000" direction="left" className="nav-link">
+        About
+    </AniLink>
+    </div>
         <Seo title="Newsfeed" />
         <Bio />
         <p>
@@ -24,6 +30,11 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+    <div className="nav-con">
+    <AniLink cover to="/about" bg="#000" direction="left" className="nav-link">
+        About
+    </AniLink>
+    </div>
       <Seo title="Newsfeed" />
       <Bio />
       <h1>Newsfeed</h1>
@@ -40,9 +51,9 @@ const BlogIndex = ({ data, location }) => {
               >
                 <header>
                   <h2>
-                    <Link to={post.fields.slug} itemProp="url">
+                    <AniLink cover to={post.fields.slug} itemProp="url" bg="#000" direction="left">
                       <span itemProp="headline">{title}</span>
-                    </Link>
+                    </AniLink>
                   </h2>
                   <small>{post.frontmatter.date}</small>
                 </header>
